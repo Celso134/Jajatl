@@ -5,11 +5,9 @@
  */
 package GUI;
 
-/**
- *
- * @author copec
- */
-public class GestionInventario extends javax.swing.JPanel {
+import javax.swing.JPanel;
+
+public class GestionInventario extends JPanel {
 
     /**
      * Creates new form GestionInventario

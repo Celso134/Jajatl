@@ -31,12 +31,10 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="stock" max="32767" attributes="0"/>
-                              <Component id="nombre" max="32767" attributes="0"/>
-                              <Component id="precio" max="32767" attributes="0"/>
-                              <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="stock" max="32767" attributes="0"/>
+                          <Component id="nombre" max="32767" attributes="0"/>
+                          <Component id="precio" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                           <Component id="editPrecio" alignment="0" max="32767" attributes="0"/>
                           <Component id="editStock" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
