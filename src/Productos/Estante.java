@@ -13,4 +13,7 @@ import java.util.ArrayList;
 
 public class Estante {
     ArrayList<Slot> slots = new ArrayList<Slot>();
+    public void jejetl(){
+        
+    }
 }
