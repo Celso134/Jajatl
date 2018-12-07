@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package GUI;
 
 import javax.swing.JOptionPane;
@@ -12,14 +7,10 @@ import javax.swing.JOptionPane;
  * @author copec
  */
 public class Menu extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Menu
-     */
     public Menu() {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,8 +22,7 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        admon = new javax.swing.JButton();
-        consultor = new javax.swing.JButton();
+        login = new javax.swing.JButton();
         register = new javax.swing.JButton();
         exit = new javax.swing.JButton();
 
@@ -45,11 +35,14 @@ public class Menu extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Seleccione una opción porfavor");
 
-        admon.setText("Administrador");
-
-        consultor.setText("Consultor");
+        login.setText("Iniciar sesion");
 
         register.setText("Crear cuenta");
+        register.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registerActionPerformed(evt);
+            }
+        });
 
         exit.setText("Salir");
         exit.addActionListener(new java.awt.event.ActionListener() {
@@ -68,11 +61,9 @@ public class Menu extends javax.swing.JFrame {
                         .addGap(51, 51, 51)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(admon)
-                        .addGap(46, 46, 46)
-                        .addComponent(consultor, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
+                        .addGap(92, 92, 92)
+                        .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(149, 149, 149)
                         .addComponent(register))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(242, 242, 242)
@@ -91,8 +82,7 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(admon)
-                    .addComponent(consultor)
+                    .addComponent(login)
                     .addComponent(register))
                 .addGap(37, 37, 37)
                 .addComponent(exit)
@@ -110,6 +100,12 @@ public class Menu extends javax.swing.JFrame {
            result = 0;
        }
     }//GEN-LAST:event_exitActionPerformed
+
+    private void registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerActionPerformed
+        RegistroUsuario rgs = new RegistroUsuario();
+        this.dispose();
+        rgs.setVisible(true);
+    }//GEN-LAST:event_registerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,11 +143,10 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton admon;
-    private javax.swing.JButton consultor;
     private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton login;
     private javax.swing.JButton register;
     // End of variables declaration//GEN-END:variables
 }

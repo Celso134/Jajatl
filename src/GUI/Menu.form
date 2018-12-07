@@ -31,11 +31,9 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                      <Component id="admon" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Component id="consultor" min="-2" pref="99" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                      <Component id="login" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
                       <Component id="register" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -60,8 +58,7 @@
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="admon" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="consultor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="login" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="register" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
@@ -88,20 +85,18 @@
         <Property name="text" type="java.lang.String" value="Seleccione una opci&#xf3;n porfavor"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="admon">
+    <Component class="javax.swing.JButton" name="login">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Administrador"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="consultor">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Consultor"/>
+        <Property name="text" type="java.lang.String" value="Iniciar sesion"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="register">
       <Properties>
         <Property name="text" type="java.lang.String" value="Crear cuenta"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registerActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="exit">
       <Properties>
