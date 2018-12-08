@@ -9,6 +9,9 @@ package GUI;
  *
  * @author copec
  */
+
+import Managers.*;
+
 public class ConsultaInventario extends javax.swing.JFrame {
 
     /**
