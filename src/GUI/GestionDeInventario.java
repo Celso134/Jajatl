@@ -13,7 +13,8 @@ package GUI;
 import Managers.*;
 
 public class GestionDeInventario extends javax.swing.JFrame {
-
+    UsersManager usersManager;
+    ProductManager productManater;
     /**
      * Creates new form GestionDeInventario
      */
@@ -21,6 +22,8 @@ public class GestionDeInventario extends javax.swing.JFrame {
         initComponents();
     }
 
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

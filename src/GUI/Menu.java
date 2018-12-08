@@ -8,9 +8,14 @@ import Managers.*;
  * @author copec
  */
 public class Menu extends javax.swing.JFrame {
+    
+    UsersManager usersManager;
+    ProductManager productManater;
     public Menu() {
         initComponents();
     }
+    
+    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

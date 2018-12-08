@@ -13,7 +13,10 @@ package GUI;
 import Managers.*;
 
 public class RegistrarUsuario extends javax.swing.JFrame {
-
+    
+    UsersManager usersManager;
+    ProductManager productManater;
+    
     /**
      * Creates new form RegistrarUsuario
      */
